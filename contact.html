@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact | IZEL</title>
+
+    <link
+    rel="icon"
+    type="image/png"
+    href="assets/logo/izel-favicon.png"
+>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =====================================================
+             NAVBAR
+             ===================================================== -->
+
+        <header class="site-header">
+
+            <nav
+                class="navbar"
+                aria-label="Main navigation"
+            >
+
+                <!-- Logo -->
+                <a
+                    href="index.html"
+                    class="navbar-logo"
+                    aria-label="IZEL home"
+                >
+
+                    <!-- Replace with your actual logo file -->
+                    <img
+                        src="assets/logo/izel-logo.png"
+                        alt="IZEL"
+                    >
+
+                </a>
+
+
+                <!-- Desktop Navigation -->
+                <div class="navbar-navigation">
+
+    <ul class="nav-list">
+
+        <li class="nav-item">
+            <a
+                href="index.html"
+                class="nav-link"
+            >
+                Home
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a
+                href="work.html"
+                class="nav-link"
+            >
+                Work
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a
+                href="services.html"
+                class="nav-link"
+            >
+                Services
+            </a>
+        </li>
+
+        <a
+    href="about.html"
+    class="nav-link"
+>
+    About
+</a>
+
+    </ul>
+
+</div>
+
+
+                <!-- Navbar CTA -->
+                <div class="navbar-actions">
+
+                    <a
+    href="contact.html"
+    class="button button-primary navbar-cta"
+>
+    Let's Work
+</a>
+
+                </div>
+
+
+                <!-- Mobile Menu Button -->
+                <button
+                    class="mobile-menu-toggle"
+                    type="button"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                    aria-controls="mobile-navigation"
+                >
+
+                    <span class="menu-line"></span>
+                    <span class="menu-line"></span>
+                    <span class="menu-line"></span>
+
+                </button>
+
+            </nav>
+
+
+            <!-- Mobile Navigation -->
+            <div
+    class="mobile-navigation"
+    id="mobile-navigation"
+    aria-hidden="true"
+>
+
+    <ul class="mobile-nav-list">
+
+        <li class="mobile-nav-item">
+            <a
+                href="index.html"
+                class="mobile-nav-link"
+            >
+                Home
+            </a>
+        </li>
+
+        <li class="mobile-nav-item">
+            <a
+                href="work.html"
+                class="mobile-nav-link"
+            >
+                Work
+            </a>
+        </li>
+
+        <li class="mobile-nav-item">
+            <a
+                href="services.html"
+                class="mobile-nav-link"
+            >
+                Services
+            </a>
+        </li>
+
+        <li class="mobile-nav-item">
+            <a
+    href="about.html"
+    class="nav-link"
+>
+    About
+</a>
+        </li>
+
+        <li class="mobile-nav-item">
+            <a
+    href="contact.html"
+    class="button button-primary navbar-cta active"
+>
+    Let's Work
+</a>
+        </li>
+
+    </ul>
+
+</div>
+
+        </header>
+
+
+    <!-- Contact Page -->
+    <main class="contact-page">
+
+        <!-- Contact Hero -->
+        <section class="contact-hero">
+
+            <div class="contact-hero-content">
+                <p class="section-label">GET IN TOUCH</p>
+
+                <h1>
+                    Let's Create
+                    <span>Something Great.</span>
+                </h1>
+
+                <p class="contact-intro">
+                    Have a project in mind? Tell me what you're working on
+                    and let's turn your ideas into engaging short-form content.
+                </p>
+            </div>
+
+        </section>
+
+
+        <!-- Contact Content -->
+        <section class="contact-section">
+
+            <!-- Contact Form -->
+            <div class="contact-form-container">
+
+                <div class="contact-heading">
+                    <p class="section-label">START A PROJECT</p>
+                    <h2>Tell Me About It.</h2>
+                </div>
+
+                <form id="contact-form" class="contact-form">
+
+                    <!-- Name -->
+                    <div class="form-group">
+                        <label for="name">Name</label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Your name"
+                            autocomplete="name"
+                            required
+                        >
+
+                        <small class="form-error" id="name-error"></small>
+                    </div>
+
+
+                    <!-- Email -->
+                    <div class="form-group">
+                        <label for="email">Email</label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="you@example.com"
+                            autocomplete="email"
+                            required
+                        >
+
+                        <small class="form-error" id="email-error"></small>
+                    </div>
+
+
+                    <!-- Project Type -->
+                    <div class="form-group">
+                        <label for="project-type">Project Type</label>
+
+                        <select
+                            id="project-type"
+                            name="project-type"
+                            required
+                        >
+                            <option value="" disabled selected>
+                                Select a project type
+                            </option>
+
+                            <option value="short-form">
+                                TikTok / Reels
+                            </option>
+
+                            <option value="social-media-ads">
+                                Social Media Ads
+                            </option>
+
+                            <option value="motion-graphics">
+                                Motion Graphics
+                            </option>
+
+                            <option value="other">
+                                Other
+                            </option>
+                        </select>
+
+                        <small class="form-error" id="project-type-error"></small>
+                    </div>
+
+
+                    <!-- Message -->
+                    <div class="form-group">
+                        <label for="message">Project Details</label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="7"
+                            maxlength="1500"
+                            placeholder="Tell me about your project..."
+                            required
+                        ></textarea>
+
+                        <div class="message-info">
+                            <small class="form-error" id="message-error"></small>
+                            <small id="character-count">0 / 1500</small>
+                        </div>
+                    </div>
+
+
+                    <!-- Submit -->
+                    <button
+                        type="submit"
+                        class="submit-button"
+                        id="submit-button"
+                    >
+                        <span class="button-text">SEND MESSAGE</span>
+                        <span class="button-loading">SENDING...</span>
+                    </button>
+
+
+                    <!-- Form Status -->
+                    <div
+                        id="form-status"
+                        class="form-status"
+                        role="status"
+                        aria-live="polite"
+                    ></div>
+
+                </form>
+
+            </div>
+
+
+            <!-- Direct Contact -->
+            <aside class="direct-contact">
+
+                <div class="contact-heading">
+                    <p class="section-label">CONTACT DIRECTLY</p>
+                    <h2>Find Me Here.</h2>
+                </div>
+
+
+                <!-- Email -->
+                <a
+                    href="mailto:YOUR-EMAIL@example.com"
+                    class="contact-link"
+                >
+                    <div class="contact-link-icon">
+                        ✉
+                    </div>
+
+                    <div class="contact-link-info">
+                        <span>Email</span>
+                        <strong>YOUR-EMAIL@example.com</strong>
+                    </div>
+                </a>
+
+
+                <!-- Instagram -->
+                <a
+                    href="https://instagram.com/YOUR-INSTAGRAM"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="contact-link"
+                >
+                    <div class="contact-link-icon">
+                        ◎
+                    </div>
+
+                    <div class="contact-link-info">
+                        <span>Instagram</span>
+                        <strong>@YOUR-INSTAGRAM</strong>
+                    </div>
+                </a>
+
+
+                <!-- TikTok -->
+                <a
+                    href="https://tiktok.com/@YOUR-TIKTOK"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="contact-link"
+                >
+                    <div class="contact-link-icon">
+                        ♪
+                    </div>
+
+                    <div class="contact-link-info">
+                        <span>TikTok</span>
+                        <strong>@YOUR-TIKTOK</strong>
+                    </div>
+                </a>
+
+
+                <!-- LinkedIn -->
+                <a
+                    href="https://linkedin.com/in/YOUR-LINKEDIN"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="contact-link"
+                >
+                    <div class="contact-link-icon">
+                        in
+                    </div>
+
+                    <div class="contact-link-info">
+                        <span>LinkedIn</span>
+                        <strong>YOUR-LINKEDIN</strong>
+                    </div>
+                </a>
+
+
+                <!-- Telegram -->
+                <a
+                    href="https://t.me/YOUR-TELEGRAM"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="contact-link"
+                >
+                    <div class="contact-link-icon">
+                        ↗
+                    </div>
+
+                    <div class="contact-link-info">
+                        <span>Telegram</span>
+                        <strong>@YOUR-TELEGRAM</strong>
+                    </div>
+                </a>
+
+            </aside>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <p>
+            © 2026 IZEL. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
